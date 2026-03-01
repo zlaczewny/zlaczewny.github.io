@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title> Site de Zoé </title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href=	"https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400...900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="stylesheet" href="style.css" type="text/css />
+</head>
+
+<body>
+	<div id="entete-de-page"> 
+		<p> Accueil <br/> </p>
+	</div> 
+	
+	<table id="bloc-menu" border="1">
+	<tr>
+		<th><a href="index.html"> Accueil </a></th>
+		<th><a href="productions.html">Productions scolaires</a></th>
+		<th><a href="passions.html">Mes passions</a></th>
+		<th><a href="Videos.html">Mes vidéos</a></th>
+		<th><a href="Site.html">Mon site de rêve</a></th>
+		
+		
+	</tr>
+	</table> <br/> 
+	<div class="presentation">
+<img src="avatar.png" alt="ceci est mon avatar" class="arrondie">
+	
+	<div class="texte-presentation">
+    <h2> Je me présente , je m'appelle Zoé Laczewny et jai 16 ans.</h2>
+		<p> Je suis une élève de seconde 7 ay lycée Sacré Coeur à Tourcoing. </p>
+			       </div>
+</div>
+<div><!--on ajoute le lien ou se trouve la musique-->
+<audio id="zic"src="music.mp3"></audio>
+<!--on nomme les boutons et leur statut-->
+<div>
+<a href="javascript:void(0)" onclick="changeState(0)"class="bouton">PLAY</a>	
+<a href="javascript:void(0)" onclick="changeState(1)"class="bouton">PAUSE</a>
+<a href="javascript:void(0)" onclick="changeState(2)"class="bouton active">STOP</a>
+</div>
+<!--on écrit les variables du script-->
+<script>
+<!--on attribue valeur et fonction de chaque bouton -->
+function changeState(x) {
+let boutons = documents.querySelectorAll(".boutons");
+let audio = documents.querySelector("#zic");
+for(let i=0; i<boutons.length; i ++){
+boutons[i].classList.remove("active");
+}
+boutons[i].classList.add("active");
+if(x== 0){
+audio.play();
+}
+if(x==1){
+audio.pause();
+}
+if(x==2){
+audio.pause();
+audio.currenTime =0;
+}
+}
+</script></div>
+        <hr>
+		<div id="infos">
+		    <h3> A lire aussi: </h3>
+			<ul>
+				<li> <a href= "danse.html"> Ma passion pour la danse </li>
+				<li> <a href= </li>https://sdx.microsoft.com/family/restricted-web?c=UNKN&url=https%3A%2F%2Fgate.first-id.fr%2F%3FredirectHost%3Dhttps%253A%252F%252Fwww.cuisineactuelle.fr%26redirectUri%3D%252Frecettes%252Fpates-a-la-carbonara-la-veritable-recette-italienne-279926
+			</ul>
+		</div>
+	</div> <br/> 
+	
+	<div id="pied-de-page">
+		<p> Projet SNT - Dernière mise à jour : 26/02/2026 <br/>
+		Les textes et images utilisés n'engagent que son auteur : Zoé </p>
+	</div> <br/> 
+
