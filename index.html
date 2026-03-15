@@ -1,0 +1,81 @@
+﻿
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<title>Site de Zoé</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="entete-de-page">
+<p>Site de Zoé</p>
+</div>
+
+<table id="bloc-menu" border="1">
+<tr>
+<th><a href="index.html">Accueil</a></th>
+<th><a href="productions.html">Productions scolaires</a></th>
+<th><a href="passions.html">Mes passions</a></th>
+<th><a href="videos.html">Mes vidéos</a></th>
+<th><a href="monsitedereve.html">Mon site de rêve</a></th>
+</tr>
+</table> <br/>
+
+<div class="presentation">
+<img src="avatar.png" alt="Avatar" class="arrondie"></img> 
+<div class="texte-presentation">
+<h2>Je me présente je suis Zoé.</h2>
+<p>Je suis Zoé Laczewny, j'ai 16ans, je suis en seconde sept. Dans la vie j'aime bien le sport, le scoutisme,mes amis et ma famille. </p>
+</div>
+</div>
+
+<audio id="zic" src="music.mp3"></audio>
+<div>
+<a href="javascript:void(0)" onclick="changeState(0)" class="bouton">PLAY</a>
+<a href="javascript:void(0)" onclick="changeState(1)" class="bouton">PAUSE</a>
+<a href="javascript:void(0)" onclick="changeState(2)" class="bouton active">STOP</a>
+</div>
+
+<script>
+function changeState(x){
+let boutons = document.querySelectorAll(".bouton");
+let audio = document.querySelector("#zic");
+for(let i=0;i<boutons.length;i++){
+boutons[i].classList.remove("active");
+}
+boutons[x].classList.add("active");
+if(x == 0) audio.play();
+if(x == 1) audio.pause();
+if(x == 2){ audio.pause(); audio.currentTime = 0; }
+}
+</script>
+
+<hr>
+<div id="infos">
+<h3>A lire aussi:</h3>
+<ul>
+<li><a href="passions.html">Mes passions</a></li>
+<li><a href="monsitedereve.html">mon site de rêve</a></li>
+</ul>
+</div>
+
+<div id="pied-de-page">
+<p>Projet SNT - Dernière mise à jour : 15/03/2026<br/>
+Les textes et images utilisés n'engagent que son auteur : Zoé</p>
+</div>
+
+</body>

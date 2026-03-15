@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<title> Mes passions </title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Lien permanent retour accueil -->
+<div id="retour-accueil">
+<a href="index.html">← Retour à l'accueil</a>
+</div>
+<div id="entete-de-page">
+<p> Mes Passions </p>
+</div>
+<table id="bloc-menu" border="1">
+<tr>
+<th><a href="index.html"> Accueil </a></th>
+<th><a href="productions.html">Productions scolaires</a></th>
+<th><a href="passions.html">Mes passions</a></th>
+<th><a href="videos.html">Mes vidéos</a></th>
+<th><a href="monsitedereve.html">Mon site de rêve</a></th>
+</tr>
+</table> <br/>
+<div id="contenu">
+<h1> Mes passions </h1>
+</div> <br/>
+
+</body>
+
+</html>
+
+<body>
+<h2>Mes passions</h2>
+
+<div class="sous-menu">
+<span onclick="afficherPassion('scoutisme')" class="onglet">scoutisme</span>
+<span onclick="afficherPassion('danse')" class="onglet">danse</span>
+</div>
+
+<div id="scoutisme" class="contenu-passion">
+<p class="explication">
+Ca fait maintenant cinq ans que je fais du scoutisme, j'adore ! J'ai commencé l'année de sixième grace à des filles que je connaissais à peine. Au début j'avais peur de m'inscire car la vie avec la nature me faisait peur , partir loin de mes parents pendant deux à trois semaines et sans aucune connexion ca me terrifiait! Aujoud'hui , le scoutisme est ma deuxième famille, j'ai mes meilleures copines la-bas , tous mes meilleurs souvenirs 
+sont la bas. C'est vrai que se lancer dans cette grande aventure peut faire peur mais une fois dedans c'est difficile de s'en passer !! Grace au scoutisme , j'ai pris confiance en moi, j'ai fais de nouvelles rencontres et j'ai appris pleins de choses! cet été , j'ai eu la chance de participer au Jamborée avec 22 000 scouts! Ce fut une experience incroyable et j'ai meme pu faire ma confirmation devant de tout ce monde avec 80 autres scouts. On a 
+meme recu une lettre du Pape !!
+</p>
+<img src="scoutisme.jpg" class="image-passion">
+</div>
+
+<div id="danse" class="contenu-passion">
+<p class="explication">
+J'aime beaucoup la danse car ca permet d'exprimer des choses dont parfois les mots ne suffisent pas. Ca me défoule également. Je pratique la danse classique depuis mes 3 ans et la danse moderne jazz depuis mes 7 ans! autant vous dire que la danse à une grande importance dans ma vie. Avant je faisais des concours mais j'ai arreté à cause de mon problème de genou et cela me stressait trop!
+</p>
+
+<img src="danse.jpg" class="image-passion">
+
+</div>
+<script>
+function afficherPassion(id) {
+
+var contenus = document.getElementsByClassName("contenu-passion");
+for (var i = 0; i < contenus.length; i++) {
+contenus[i].style.display = "none";
+}
+
+document.getElementById(id).style.display = "block";
+}
+</script>

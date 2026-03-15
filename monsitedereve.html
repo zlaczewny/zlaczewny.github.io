@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Mon site de rêve</title>
+
+<!-- Lien vers ton fichier CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Import des polices -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Titre principal -->
+<h1 class="montexte">Mon site de rêve</h1>
+
+<!-- Bouton retour accueil -->
+<div id="retour-accueil">
+<a href="index.html">← Retour à l'accueil</a>
+</div>
+
+<!-- Sous-menu -->
+<div class="menu-deroulant">
+<div class="onglet" onclick="afficher('voyage')">Voyage</div>
+<div class="onglet" onclick="afficher('cuisine')">Cuisine</div>
+<div class="onglet" onclick="afficher('concert')">Concert</div>
+</div>
+
+<!-- Contenu Voyage -->
+<div id="voyage" class="contenu-categorie">
+<div class="galerie">
+
+<div class="image-bloc">
+<h3>New York</h3>
+<img src="newyork.jpg" alt="New York">
+<p> New York a été mon voyage péféré.J'ai eu la cance d'y aller pour les 18 ans de mon grand frère avec mes 3 frères et mes parents. C'était incroyable , il y a tellement de chose à faire et à voir , c'est une ville magique!.</p>
+</div>
+
+<div class="image-bloc">
+<h3>Las Palmas</h3>
+<img src="laspalmas.jpg" alt="las Palmas">
+<p>Je suis partie à Las Palmas cette année en échange grace au programme erasmus et j'en garde d'incroyables souvenir , c'est une chance d'avoir pu vivre cela!.</p>
+</div>
+
+<div class="image-bloc">
+<h3>Crète</h3>
+<alt="Crète">
+<p>La crète est le premier voyage que j'ai fais!</p>
+
+<div class="image-bloc">
+<h3>Maroc</h3>
+<alt="maroc">
+<p>Je suis allée au maroc pour mes 13 ans. Le jour meme de mon anniversaire , nous sommes allés passer une nuit dans d=le désert c'était INCROYABLE! .</p>
+</div>
+
+</div>
+</div>
+
+<!-- Contenu Cuisine -->
+<div id="cuisine" class="contenu-categorie">
+<div class="galerie">
+
+<div class="image-bloc">
+<h3>Les cookies</h3>
+<alt="Cookies">
+<p>Tous les mercredis , mon papy vient passer l'après-midi à la maison et tous les mercredis je fais des cookies pour le gouter. Mon papy dit que c'est les meilleurs!.</p>
+</div>
+
+<div class="image-bloc">
+<h3>Pates Carbos</h3>
+<alt="Pates carbos">
+<p>Les pates carbos est mon repas préferé depuis toute petite , je m'en lasse pas ! Celles de ma maman sont mes favorites.</p>
+</div>
+
+<div class="image-bloc">
+<h3>Gnocchis</h3>
+<alt="Gnocchis">
+<p>Les gnocchis sont les seuls aliment salés que j'arrive à faire cuire sans cramer toute la maison!.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Contenu Concert -->
+<div id="concert" class="contenu-categorie">
+<div class="galerie">
+
+<div class="image-bloc">
+<h3>Louane</h3>
+<alt="Louane">
+<p>En 2018 je suis allé au concert de Louane avec ma maman et c'était mon premier vrai concert!.</p>
+</div>
+
+<div class="image-bloc">
+<h3>Renaud</h3>
+<alt="Reanaud">
+<p>Je suis allée voir deux fois Renaud avec ma maman , la première fois au theatre de la mer à sète , un lieu magique!.</p>
+</div>
+
+<div class="image-bloc">
+<h3>Clara Luciani</h3>
+<alt="Clara Luciani">
+<p>En 2025 je suis allé au concert de Clara Luciani. J'ai bien aimé ce concert car c'était avec ma maman et que nous aimons toutes les deuc cette chanteuse!.</p>
+</div>
+
+<div class="image-bloc">
+<h3>Hoshi</h3>
+<alt="Hoshi">
+<p>En 2025 je suis aussi allé au concert de Hoshi avec ma maman. Celui la était très sympa aussi, il regroupait plusieurs générations donc c'était super.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Script pour afficher la catégorie cliquée -->
+<script>
+function afficher(id) {
+const sections = document.querySelectorAll('.contenu-categorie');
+sections.forEach(s => s.style.display = 'none');
+document.getElementById(id).style.display = 'block';
+}
+</script>
+
+</body>
+</html>
+

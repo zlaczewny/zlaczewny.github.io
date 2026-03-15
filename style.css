@@ -1,0 +1,94 @@
+ 
+ iframe{
+	 
+	 height:100vh;
+	 widht:100%;
+}
+body {
+	background-color: #A8435E ;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+img { 
+	float: left; 
+	margin-right: 20px;
+}
+i.presentation {
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+}
+
+.presentation img {
+	widht: 120px; /* plus fiable que % ici */
+	height: auto;
+}
+.texte-presentation {
+	flex: 1;
+	color:#163880;
+}
+
+th{ width: 200px;}
+ul{ list-style-type: square;}
+
+#entete-de-page {
+	padding: 5px;
+	height: 100px;
+	background-color:#D64D70;
+	font-size: 32px;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: center;
+}
+#bloc-menu {
+	height: 36px;
+	background-color:#D89EFF;
+	float: center;
+	color: white;
+}
+#contenu {
+	padding: 36px;
+	background-color: #B869AA;
+} /*j'ai mis un fond rose clair sur la zone de contenu car c'est ma couleur préferée*/
+#infos {
+	color: #ED4CCD;
+	font-style: italic;
+}
+#pied-de-page {
+	padding: 5px;
+	background-color: #C93AAD;
+	font-size: 11px;
+}
+/*créer des commandes pour lancer /arrèter de la musique*/
+.boutons {
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	font-weight: 500;
+	color:#BF3AC9;
+	font-size:4rem;
+	line-height:2em;
+}
+
+.boutons.active {
+Color:#9464E8;
+}
+/*mettre une image aux bords arrondis*/
+
+.arrondie {
+-moz-border-radius:35px;
+-webkit-border-radius:35px;
+border-radius:35px;
+}
+.playfair-display-<uniquifier> {
+  font-family: "Playing Display" , serif ;
+  font-optical-sizing: auto ;
+  font-weight: <weight>;
+  font-style: normal:
+}
+  
+img {
+	widht: 8cm;
+	height: 8cm;
+	margin-top: 30px;
+}
